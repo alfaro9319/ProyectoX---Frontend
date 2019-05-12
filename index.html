@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyecto X | Inicio</title>
+	   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	   <link rel="stylesheet" type="text/css" href="css/estilos.css">
+	  <script src="js/jquery.min.js"></script>
+	  <script src="js/bootstrap.js"></script>
+	  <script src="js/proyectox.js"></script>
+</head>
+<body>
+
+
+<!-- BARRA DE NAVEGACIÓN - INICIO -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Proyecto X</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Freelancers</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="#" data-toggle="modal" data-target="#mLogin"><span class="glyphicon glyphicon-user" ></span> Iniciar sesión</a></li>
+
+        <button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#mInicioSesion">Publicar proyecto</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- BARRA DE NAVEGACIÓN - FIN -->
+
+
+
+
+<!-- Modal INICIO SESIÓN-->
+<div class="modal fade mLogin" tabindex="-1" role="dialog" aria-labelledby="mLogin" aria-hidden="true" id="mLogin">
+<div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="mLogReg">Inicio de sesión</h4>
+                </div>
+                <div class="modal-body">
+                		<button type="button" class="btn btn-fb btn-block">Iniciar sesión con Facebook</button>
+                		<button type="button" class="btn btn-gg btn-block">Iniciar sesión con Google</button>
+                		<hr>
+                		<form action="/action_page.php">
+						  <div class="form-group">
+						    <label for="email">Correo electronico:</label>
+						    <input type="email" class="form-control" id="email">
+						  </div>
+						  <div class="form-group">
+						    <label for="pwd">Contraseña:</label>
+						    <input type="password" class="form-control" id="pwd">
+						  </div>
+						  <div class="checkbox">
+						    <label><input type="checkbox"> Recuerdame</label>
+						  </div>
+						  <button type="button" class="btn btn-default" onclick="aLogin()" data-dismiss="modal">Iniciar sesión</button>
+						</form>
+                  </div>
+              <div class="modal-footer">
+                	<a href="#">No me recuerdo mi contraseña</a>
+                	<a href="#">Registrarse</a>
+              </div>          
+        </div>
+        </div>
+      </div>
+    </div>
+<!-- Modal FIN -->
+
+<!-- ALERTA LOGIN -->
+<div class="aLogin-top alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  Bienvenido <strong>@PerroFlaco</strong> a <strong>ProyectoX</strong>, la más grande comunidad de freelancers.
+</div>
+<!-- ALERTA LOGIN FIN -->
+
+<!-- SLIDER: INICIO -->
+<div class="container bg-overlay">
+	<div class="row text-center">
+		<h1>This is a beautiful background image<br> with a transparent overlay.</h1>
+        <h4>You can just use the "<strong>.bg-overlay</strong>" class on any container/element,<br>
+        and specify the image you want to use and its height.</h4>
+        <br><br>
+        <button type="button" class="btn btn-default btn-lg">Publicar proyecto</button>
+	</div>
+</div>
+<!-- SLIDER: FIN -->
+
+<!-- FREELANCER / ANUNCIANTE / PROYECTO: INICIO -->
+<div class="how-section1">
+                    <div class="row">
+                        <div class="col-md-6 how-img">
+                            <img src="https://image.ibb.co/dDW27U/Work_Section2_freelance_img1.png" class="rounded-circle img-fluid" alt=""/>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Proyectos</h4>
+                                        <h4 class="subheading">GetLance is a great place to find more clients, and to run and grow your own freelance business.</h4>
+                        <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
+                                            Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
+                                            More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Freelancer</h4>
+                                        <h4 class="subheading">GetLance makes it easy to connect with clients and begin doing great work.</h4>
+                                        <p class="text-muted">Streamlined hiring. GetLance’s sophisticated algorithms highlight projects you’re a great fit for.
+                                            Top Rated and Rising Talent programs. Enjoy higher visibility with the added status of prestigious programs.
+                                            Do substantial work with top clients. GetLance pricing encourages freelancers to use GetLance for repeat relationships with their clients.</p>
+                        </div>
+                        <div class="col-md-6 how-img">
+                            <img src="https://image.ibb.co/cHgKnU/Work_Section2_freelance_img2.png" class="rounded-circle img-fluid" alt=""/>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+<!-- FRELANCER / ANUNCIANTE / PROYECTO: FIN-->
+
+<!-- COUNTER: INICIO -->
+<div class="counter">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="employees">
+                  <p class="counter-count">879</p>
+                  <p class="employee-p">Employee</p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="customer">
+                  <p class="counter-count">954</p>
+                  <p class="customer-p">Customer</p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="design">
+                  <p class="counter-count">1050</p>
+                  <p class="design-p">Design</p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="order">
+                  <p class="counter-count">652</p>
+                  <p class="order-p">Orders</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- COUNTER: FIN -->
+
+<!-- COMENTARIOS DE LA COMUNIDAD: INICIO -->
+<div class="container">
+  <div class="row">
+    <div class='col-md-offset-2 col-md-8 text-center'>
+    <h2>Responsive Quote Carousel BS3</h2>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-offset-2 col-md-8'>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="http://www.reactiongifs.com/r/overbite.gif" style="width: 100px;height:100px;">
+                  <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                </div>
+                <div class="col-sm-9">
+                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/mijustin/128.jpg" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>                          
+    </div>
+  </div>
+</div>
+<!-- COMENTARIOS: FIN-->
+
+<!-- PLANES: INICIO -->
+<h2 class="text-center">Planes</h2>
+<div class="container content">
+	<div class="row">
+		<!-- Pricing -->
+		<div class="col-md-3">
+			<div class="pricing hover-effect">
+				<div class="pricing-head">
+					<h3>Libre
+					</h3>
+					<h4><i>S/.</i>0<i>.00</i>
+					<span>
+					MENSUAL </span>
+					</h4>
+				</div>
+				<ul class="pricing-content list-unstyled">
+					<li>
+						3 meses gratuito
+					</li>
+					<li>
+						10 propuestas semanales
+					</li>
+					<li>
+						2 proyectos en curso
+					</li>
+					<li>
+						Habilidades limitadas (las más comunes)
+					</li>
+				</ul>
+				<div class="pricing-footer">
+					<p>
+						 Una iniciativa para formar parte de ProyectoX.
+					</p>
+					<a href="javascript:;" class="btn btn-default">
+					Registrate
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="pricing hover-effect">
+				<div class="pricing-head">
+					<h3>Básico
+					</h3>
+					<h4><i>S/.</i>20<i>.00</i>
+					<span>
+					MENSUAL </span>
+					</h4>
+				</div>
+				<ul class="pricing-content list-unstyled">
+					<li>
+						20 propuestas semanales
+					</li>
+					<li>
+						Retiro libre de saldo virtual
+					</li>
+					<li>
+						Chat con clientes
+					</li>
+					<li>
+						Habilidades ilimitadas
+					</li>
+					<li>
+						Notificaciones de nuevos proyectos
+          </li>
+          <li>
+						<b>Prioridad 3</b>  , en postulaciones
+          </li>
+          <li>
+						Participa en premios trimestrales
+          </li>
+          <li>
+            <b>Cobro por comisión</b> 10%
+					</li>
+				</ul>
+				<div class="pricing-footer">
+					<p>
+						 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
+					</p>
+					<a href="javascript:;" class="btn btn-default">
+					Registrate
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="pricing pricing-active hover-effect">
+				<div class="pricing-head pricing-head-active">
+					<h3>Intermedio <span>
+					Recomendado </span>
+					</h3>
+					<h4><i>$</i>13<i>.99</i>
+					<span>
+					Por mes </span>
+					</h4>
+				</div>
+				<ul class="pricing-content list-unstyled">
+					<li>
+						At vero eos
+					</li>
+					<li>
+						No Support
+					</li>
+					<li>
+						Fusce condimentum
+					</li>
+					<li>
+						Ut non libero
+					</li>
+					<li>
+						Consecte adiping elit
+					</li>
+				</ul>
+				<div class="pricing-footer">
+					<p>
+						 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
+					</p>
+					<a href="javascript:;" class="btn btn-default">
+					Registrate
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="pricing hover-effect">
+				<div class="pricing-head">
+					<h3>Avanzado <span>
+					Officia deserunt mollitia </span>
+					</h3>
+					<h4><i>$</i>99<i>.00</i>
+					<span>
+					Por mes </span>
+					</h4>
+				</div>
+				<ul class="pricing-content list-unstyled">
+					<li>
+						At vero eos
+					</li>
+					<li>
+						No Support
+					</li>
+					<li>
+						Fusce condimentum
+					</li>
+					<li>
+						Ut non libero
+					</li>
+					<li>
+						Consecte adiping elit
+					</li>
+				</ul>
+				<div class="pricing-footer">
+					<p>
+						 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
+					</p>
+					<a href="javascript:;" class="btn btn-default">
+					Registrate
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--//End Pricing -->
+	</div>
+</div>
+<!-- PLANES: FIN -->
+
+
+
+<!-- PROYECTOS NUEVOS: INICIO-->
+<h2 class="text-center">Proyectos recientes</h2>
+<div class="container">
+	<div class="row">
+		<div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+               <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    	<img src="img/projectx.png" class="img-responsive">
+                    	<h5><b>Tìtulo del proyecto</b></h5>
+                        <p>Descripción del proyecto</p>
+                        <button class="btn btn-default">Ver proyecto</button>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary leftLst"><</button>
+            <button class="btn btn-primary rightLst">></button>
+        </div>
+	</div>
+<!-- PROYECTOS NUEVOS: FIN -->
+
+
+
+</body>
+</html>
