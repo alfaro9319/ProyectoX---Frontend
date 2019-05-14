@@ -23,7 +23,7 @@
                 <ul class="nav nav-tabs" role="tablist">
 
                     <li role="presentation" class="active">
-                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Datos personales">
                             <span class="round-tab">
                                 <i class="glyphicon glyphicon-folder-open"></i>
                             </span>
@@ -31,14 +31,14 @@
                     </li>
 
                     <li role="presentation" class="disabled">
-                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Datos ac">
                             <span class="round-tab">
                                 <i class="glyphicon glyphicon-pencil"></i>
                             </span>
                         </a>
                     </li>
                     <li role="presentation" class="disabled">
-                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Seleccionar plan">
                             <span class="round-tab">
                                 <i class="glyphicon glyphicon-picture"></i>
                             </span>
@@ -46,7 +46,7 @@
                     </li>
 
                     <li role="presentation" class="disabled">
-                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Resumen">
                             <span class="round-tab">
                                 <i class="glyphicon glyphicon-ok"></i>
                             </span>
@@ -58,11 +58,25 @@
             <form role="form">
                 <div class="tab-content">
                     <div class="tab-pane active" role="tabpanel" id="step1">
-                        <h3>Step 1</h3>
+                        <h3 class="titlePX">Datos personales</h3>
+                        <div class="form-group" aria-required="true">
+                            <label for="Nombres">Nombres: </label>
+                            <input type="text" class="form-control" required> 
+                            <label for="Nombres">Apellidos: </label>
+                            <input type="text" class="form-control" required>
+                            <label for="Nombres">DNI: </label>
+                            <input type="number" class="form-control" required>
+                            <label for="Nombres">Corre electronico: </label>
+                            <input type="email" class="form-control" required>
+                            <input type="date">
+                            <input type="submit" value="Siguiente" class="btn-default">
+                            
+                        
                         <p>This is step 1</p>
                         <ul class="list-inline pull-right">
-                            <li><button type="button" class="btn btn-default next-step">Guardar y continuar</button></li>
+                            <li><button type="submit" class="btn btn-default next-step">Guardar y continuar</button></li>
                         </ul>
+                        </div>
                     </div>
                     <div class="tab-pane" role="tabpanel" id="step2">
                         <h3>Step 2</h3>
