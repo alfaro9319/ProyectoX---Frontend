@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/registro.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/proyectox.js"></script>
@@ -14,10 +14,35 @@
 <body>
 
 <!-- REGISTRO INICIO-->
-<div class="container">
-    
-</div>
+
+
+    <form action="action_page.php">
+        <div class="container">
+          <h1>Register</h1>
+          <button type="button" class="btn btn-fb btn-block">Iniciar sesión con Facebook</button>
+          <button type="button" class="btn btn-gg btn-block">Iniciar sesión con Google</button>
+          <hr>
+      
+          <label for="email"><b>Correo electronico:</b></label>
+          <input id="myInput" type="text" placeholder="Ingresa tu correo electronico" name="email" required>
+      
+          <label for="psw"><b>Contraseña</b></label>
+          <input id="myInput" type="password" placeholder="Ingresa tu contraseña" name="psw" required>
+      
+          <label for="psw-repeat"><b>Repite la contraseña</b></label>
+          <input id="myInput" type="password" placeholder="Repite la contraseña" name="psw-repeat" required>
+          <hr>
+          <input type="checkbox" checked="checked" name="sameadr"> Acepto los <a href="#">Terminos y Politicas de privacidad</a> de <b>ProyectoX</b>
+
+          <button type="submit" class="registerbtn">Registrarse</button>
+        </div>
+      
+        <div class="container signin">
+          <p>¿Ya cuentas con una cuenta en ProyectoX? <a href="#">Inicia sesión</a>.</p>
+        </div>
+      </form>
 <!-- REGISTRO FIN -->
+
 
 </body>
 </html>
